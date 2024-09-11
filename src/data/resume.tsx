@@ -2,15 +2,15 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  name: "Guilherme Castel-Branco",
+  initials: "GV",
+  url: "",
+  location: "Lisbon, Portugal",
+  locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Hi, I’m Guilherme – a forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I’m a Software Developer and Data Engineer with 2+ years of experience, holding a degree in Computer Science and currently pursuing a Master’s in Information Management. I’m passionate about blending creativity with technology, whether it’s optimizing data systems or building solutions that benefit the community. I’ve worked remotely for companies in Lithuania and collaborated with leading organizations in Portugal, such as EDP. Outside of work, I’m a sports enthusiast and enjoy creating projects that bring people together. For me, it’s all about combining technical skills with creativity to make an impact.",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -27,37 +27,23 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/blog", icon: NotebookIcon, label: "Backlog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "guicbranco1@gmail.com",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/castellbranco",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/guilherme-castel-branco-73a17719b/",
         icon: Icons.linkedin,
 
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
@@ -94,55 +80,7 @@ export const DATA = {
       end: "April 2021",
       description:
         "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    },
+    }
   ],
   education: [
     {
@@ -158,14 +96,6 @@ export const DATA = {
       href: "https://uwaterloo.ca",
       degree: "Bachelor's Degree of Computer Science (BCS)",
       logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
       start: "2016",
       end: "2021",
     },
