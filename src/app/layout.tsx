@@ -13,7 +13,16 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: (() => {
+      try {
+          // Check if DATA.url is a valid URL
+          return new URL(DATA.url);
+      } catch (e) {
+          console.error("Invalid URL:", DATA.url, e);
+          // Fallback to a default URL if invalid
+          return new URL("https://example.com"); // Adjust this default URL as needed
+      }
+  })(),
   title: {
     default: DATA.name,
     template: `%s | ${DATA.name}`,
