@@ -18,7 +18,9 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  tags?: readonly string[]; // Adding tags field for badges
 }
+
 export const ResumeCard = ({
   logoUrl,
   altText,
@@ -28,6 +30,7 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  tags, // Include tags in the props
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -86,21 +89,34 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
+
           {description && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
-                opacity: isExpanded ? 1 : 0,
-
-                height: isExpanded ? "auto" : 0,
+              opacity: isExpanded ? 1 : 0,
+              height: isExpanded ? "auto" : 0,
               }}
               transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
+              duration: 0.7,
+              ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm" 
             >
               {description}
+              {tags && tags.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1">
+              {tags.map((tag, index) => (
+              <Badge
+                className="px-1 py-0 text-[10px]"
+                variant="secondary"
+                key={index}
+              >
+                {tag}
+              </Badge>
+              ))}
+            </div>
+            )}
             </motion.div>
           )}
         </div>
