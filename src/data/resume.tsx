@@ -8,7 +8,7 @@ export const DATA = {
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
-    "Hi, I’m Guilherme – a forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
+    "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
   summary:
     "I’m a Software Developer and Data Engineer with 2+ years of experience, holding a Master’s in Information Management & a degree in Computer Science. I’m passionate about blending creativity with technology, whether it’s optimizing data systems or building solutions that benefit the community. I’ve worked remotely for companies in Lithuania and collaborated with leading organizations in Portugal, such as EDP. Outside of work, I’m a sports enthusiast and enjoy creating projects that bring people together. For me, it’s all about combining technical skills with creativity to make an impact.",
   avatarUrl: "/me.png",
