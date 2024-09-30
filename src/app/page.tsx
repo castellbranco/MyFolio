@@ -3,13 +3,12 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import OrbitingCircles from "@/components/magicui/orbiting-circles";
-// 
+import HeroSection from "@/components/sections/HeroSection";
 import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -17,43 +16,12 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <> 
-      <main className="max-w-screen-xl mx-auto h-full w-full grid min-h-screen grid-cols-1 sm:grid-cols-2">
-        {/* Left Section */}
-        <section id="left-section" className="flex flex-col space-y-6">
-          <div className="mx-auto w-full max-w-2xl space-y-8">
-            <div className="gap-2 flex justify-between">
-                <div className="flex-col flex flex-1 space-y-1.5 max-w-[800px]">
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
-                  yOffset={10}
-                  text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-                />
-                <BlurFadeText
-                  className="max-w-[800px] md:text-lg"
-                  delay={BLUR_FADE_DELAY}
-                  text={DATA.description}
-                />
-                </div>
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <Avatar className="size-28 border">
-                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                  <AvatarFallback>{DATA.initials}</AvatarFallback>
-                </Avatar>
-              </BlurFade>
-            </div>
-          </div>
-        </section>
-
-        {/* Right Section */}
-        <section id="right-section" className="flex justify-center">
-          <div className="relative flex h-full w-full max-w-[32rem] justify-center overflow-hidden rounded-lg bg-background">
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <OrbitingCirclesDemo/>
-            </BlurFade>
-          </div>
-        </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 2}>
+      <main className="min-h-screen">
+        <HeroSection/>
       </main>
+      </BlurFade>
+
 
       <main className="flex flex-col min-h-[100dvh] space-y-10">
         <section id="about">
@@ -193,73 +161,3 @@ export default function Page() {
     </>  
   );
 }
-
-export function OrbitingCirclesDemo() {
-  return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-      <span className="pointer-events-none whitespace-pre-wrap from-black to-gray-300 text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
-        I build things for the web.
-        <br />
-        Let's build something together!
-      </span>
- 
-      {/* Inner Circles */}
-      <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={80}
-      >
-        <Icons.github />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[30px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={80}
-      >
-
-      </OrbitingCircles>
- 
-      {/* Outer Circles (reverse) */}
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
-        duration={20}
-        reverse
-      >
-        <Icons.databricks />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
-        duration={20}
-        delay={20}
-        reverse
-      >
-        <Icons.pytorch />
-      </OrbitingCircles>
-
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
-        duration={20}
-        delay={80}
-        reverse
-      >
-
-      </OrbitingCircles>
-
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={120}
-        duration={40}
-        delay={-10}
-        reverse
-      >
-        <Icons.jupyter />
-      </OrbitingCircles>
-    </div>
-  );
-}
-
