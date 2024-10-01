@@ -8,15 +8,13 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <> 
-      <BlurFade delay={BLUR_FADE_DELAY * 2}>
       <main className="min-h-screen">
+        <BlurFade delay={BLUR_FADE_DELAY * 2}>
         <HeroSection/>
-        {/* <IntroSection/>
+        <IntroSection/>
         <ProjectSection/>
-        <ContactSection/> */}
+        <ContactSection/>
+        </BlurFade>
       </main>
-      </BlurFade>
-  </>
   );
 }
