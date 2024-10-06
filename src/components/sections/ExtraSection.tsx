@@ -1,14 +1,14 @@
 import React from "react";
 import MaxWidthWrapper from "../ui/MaxWidthWrapper";
 import BlurFade from "@/components/magicui/blur-fade";
-import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
+import { BentoCard, BentoGrid } from "../ui/bento-grid";
 
 const BLUR_FADE_DELAY = 0.04;
 
 const ExtraSection = () => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper className="flex flex-col pb-20">
         <section id="Extra">
           <div className="space-y-12 w-full py-12">
             <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -21,14 +21,15 @@ const ExtraSection = () => {
                     Outside the box
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    I&apos;m passionate about teamwork, leadership, and contributing to the community. 
+                    I&apos;m passionate about teamwork, leadership, and contributing to the community.
+                    <br/>
                     These activities bring me a sense of purpose and energy.
                   </p>
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-
+            <div>
+              <BentoDemo />
             </div>
           </div>
         </section>
@@ -37,3 +38,13 @@ const ExtraSection = () => {
 };
 
 export default ExtraSection;
+
+export async function BentoDemo() {
+  return (
+    <BentoGrid className="lg:grid-rows-3">
+      {DATA.features.map((feature, id) => (
+        <BentoCard key={feature.name} {...feature} />
+      ))}
+    </BentoGrid>
+  );
+}

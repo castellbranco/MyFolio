@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 const ContactSection = () => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper className="flex flex-col pb-20">
      <section id="contact">
           <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
