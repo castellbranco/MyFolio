@@ -168,6 +168,64 @@ export const DATA = {
       ],   
     }
   ],
+  extra: [
+    {
+      company: "NTT Data",
+      href: "https://www.nttdata.com/global/en/",
+      badges: [],
+      location: "Remote/Portugal",
+      title: "Junior Engineer",
+      logoUrl: "/ntt.svg",
+      start: "January 2024",
+      end: "Present",
+      description:
+        "Engineered data pipelines using Databricks, SQL, and Python to optimize the Global Energy Market Operating System (GEMOS) for a leading energy provider. Implemented data warehouse architecture for real-time energy market analysis and reporting. Collaborated in an Agile environment, driving innovation and process improvements. Designed scalable data solutions to enhance performance and accuracy, supporting global market operations.",
+      technologie: [
+        "Databricks",
+        "Azure",
+        "Pyspark",
+        "Python & SQL",
+      ],
+    },
+    {
+      company: "Codyfight",
+      badges: [],
+      href: "https://codyfight.com/",
+      location: "Remote",
+      title: "Senior Community Manager & Debugger",
+      logoUrl: "/cody.png",
+      start: "February 2022",
+      end: "September 2023",
+      description:
+        "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
+      technologie: [
+        "Solidity",
+        "Marketing",
+        "Software Design",
+        "Social Media",
+        "Better Communication & Teamwork",
+      ],
+    },
+    {
+      company: "Myra",
+      badges: [],
+      href: "https://www.instagram.com/myra_pt/",
+      location: "Insight",
+      title: "Founder",
+      logoUrl: "/myra.jpg",
+      start: "January 2018",
+      end: "Present",
+      description:
+        "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
+      technologie: [
+        "Innovation",
+        "Social Media Platforms",
+        "Google Analytics",
+        "Shopify",
+        "Adobe Photoshop",
+      ],   
+    }
+  ],
   education: [
     {
       school: "University of Science of Lisbon",
