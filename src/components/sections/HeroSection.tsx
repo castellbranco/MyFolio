@@ -9,8 +9,8 @@ const HeroSection = () => {
     <MaxWidthWrapper className="grid min-h-screen grid-cols-1 items-center sm:grid-cols-2 relative">
       
       {/* Avatar positioned at top-left */}
-      <div className="absolute top-16 -right-20 sm:-right-20 sm:top-16">
-        <Avatar className="size-40 sm:size-40 border">
+      <div className="absolute top-16 -right-40 sm:-right-40 sm:top-16">
+        <Avatar className="size-44 sm:size-44 border">
           <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
           <AvatarFallback>{DATA.initials}</AvatarFallback>
         </Avatar>

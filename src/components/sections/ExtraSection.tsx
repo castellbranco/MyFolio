@@ -24,15 +24,15 @@ const ExtraSection = () => {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;m passionate about teamwork, leadership, and contributing to the community.
-                  <br/>
+                  <br />
                   These activities bring me a sense of purpose and energy.
                 </p>
-                <br/> 
+                <br />
               </div>
             </div>
-              <section id="extra">
+            <section id="extra">
               <div className="flex min-h-0 flex-col gap-y-3">
-                   {DATA.extra.map((extra, id) => (
+                {DATA.extra.map((extra, id) => (
                   <BlurFade
                     key={extra.company}
                     delay={BLUR_FADE_DELAY * 6 + id * 0.05}

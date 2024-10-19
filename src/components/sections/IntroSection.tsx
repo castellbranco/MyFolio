@@ -18,12 +18,12 @@ const IntroSection = () => {
                   About me
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Outside the box
+                  Professional Experience
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;m passionate about teamwork, leadership, and contributing to the community.
-                  <br/>
-                  These activities bring me a sense of purpose and energy.
+                  I&apos;m a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. 
+                  <br />
+                  I&apos;ve worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.
                 </p>
               </div>
             </div>
