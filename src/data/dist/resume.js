@@ -56,13 +56,13 @@ exports.DATA = {
     features: [
         {
             Icon: function () {
-                return React.createElement("div", { className: "flex justify-center items-center" },
+                return React.createElement("div", { className: "flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]" },
                     React.createElement("img", { src: "/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
             },
             name: "Junior Engineer",
-            description: "Ntt Data",
+            description: "Ntt Data [Jan 2024 - Present]",
             href: "https://www.nttdata.com/global/en/",
-            cta: "Learn more",
+            cta: "Know more",
             desc: "Engineered data pipelines using Databricks, SQL, and Python to optimize the Global Energy Market Operating System (GEMOS) for a leading energy provider. Implemented data warehouse architecture for real-time energy market analysis and reporting. Collaborated in an Agile environment, driving innovation and process improvements. Designed scalable data solutions to enhance performance and accuracy, supporting global market operations.",
             technologie: [
                 "Databricks",
@@ -75,14 +75,14 @@ exports.DATA = {
         },
         {
             Icon: function () {
-                return React.createElement("div", { className: "flex justify-center items-center" },
+                return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]" },
                     React.createElement("img", { src: "/cody.png", alt: "Codyfight Logo", className: "h-20 w-20" }));
             },
             name: "Senior Community Manager & Debugger",
-            description: "Codyfight",
+            description: "Codyfight [Feb 2022 - Sep 2023]",
             href: "https://codyfight.com/",
-            cta: "Learn more",
-            desc: "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
+            cta: "Know more",
+            desc: "Managed community engagement and social media channels to grow an active player base. Debugged the Beta version, collaborating with the development team to enhance gameplay. Developed content strategies to boost player retention and provided key feedback to optimize performance.",
             technologie: [
                 "Solidity",
                 "Marketing",
@@ -94,37 +94,60 @@ exports.DATA = {
             className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
         },
         {
-            Icon: react_icons_1.LockClosedIcon,
-            name: "",
-            description: "",
-            href: "",
-            cta: "",
+            Icon: function () {
+                return React.createElement(React.Fragment, null,
+                    React.createElement(react_icons_1.MixIcon, { className: "h-10 w-10" }));
+            },
+            name: "Ongoing Project",
+            description: "A side project that I'm working on",
+            href: "/",
+            cta: "Know more",
             desc: "",
             technologie: [],
             background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
-            className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4"
+            className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 pointer-events-none"
         },
         {
-            Icon: react_icons_1.LockClosedIcon,
-            name: "",
-            description: "",
-            href: "",
+            Icon: function () { return React.createElement(React.Fragment, null); },
+            name: "Academic Background",
+            description: (React.createElement("span", { className: "text-sm text-neutral-600 leading-relaxed tracking-wide" },
+                React.createElement("span", { className: "block font-semibold text-neutral-800" }, "NOVA Information Management School"),
+                React.createElement("span", { className: "block" }, "Master in Information Management"),
+                React.createElement("span", { className: "block mt-2 font-semibold text-neutral-800" }, "University of Science of Lisbon"),
+                React.createElement("span", { className: "block" }, "Bachelor's Degree of Computer Science (BCS)"))),
+            href: "/",
             cta: "",
             desc: "",
             technologie: [],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
-            className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-30" }),
+            className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-100 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none"
         },
+        // {
+        //   school: "University of Science of Lisbon",
+        //   href: "https://ciencias.ulisboa.pt/",
+        //   degree: "Bachelor's Degree of Computer Science (BCS)",
+        //   logoUrl: "/fcul.png",
+        //   start: "2018",
+        //   end: "2022",
+        // },
+        // {
+        //   school: "NOVA Information Management School",
+        //   href: "https://www.novaims.unl.pt/",
+        //   degree: "Master in Information Management",
+        //   logoUrl: "/nova.jpg",
+        //   start: "2022",
+        //   end: "2024",
+        // },
         {
             Icon: function () {
-                return React.createElement("div", { className: "flex justify-center items-center" },
+                return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]" },
                     React.createElement("img", { src: "/myra_trans.png", alt: "Myra Logo", className: "h-20 w-20" }));
             },
             name: "Founder",
-            description: "Myra",
+            description: "Myra [Jan 2018 - Present]",
             href: "https://www.instagram.com/myra_pt/",
-            cta: "Learn more",
-            desc: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
+            cta: "Know more",
+            desc: "Founded Myra, a sustainable fashion brand, overseeing product design, marketing, and operations. Developed eco-friendly clothing that attracted media attention and a diverse customer base, blending creativity and sustainability to foster community and innovation.",
             technologie: [
                 "Innovation",
                 "Social Media Platforms",

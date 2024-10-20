@@ -50,8 +50,6 @@ export async function BentoDemo() {
   );
 }
 
-
-
 // <section id="about">
 //           <BlurFade delay={BLUR_FADE_DELAY * 3}>
 //             <h2 className="text-xl font-bold">About</h2>

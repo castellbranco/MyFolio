@@ -59,6 +59,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      height: {
+        '50rem': '50rem', // Add custom height value
+      },
       keyframes: {
 
         orbit: {
