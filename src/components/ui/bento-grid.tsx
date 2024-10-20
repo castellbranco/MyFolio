@@ -68,7 +68,7 @@ const BentoCard = ({
       </h3>
 
       {/* Description with opacity transition */}
-      <p className="max-w-lg text-neutral-400 transition-opacity duration-300 ease-out group-hover:opacity-0">
+      <p className="max-w-lg text-neutral-600 transition-opacity duration-300 ease-out group-hover:opacity-0">
         {description}
       </p>
     </div>
@@ -105,13 +105,12 @@ const BentoCard = ({
       {/* Call-to-action button */}
       <a
         href={href}
-        className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+        className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline pointer-events-auto"
       >
         {cta}
         <ArrowRightIcon className="ml-2 h-4 w-4" />
       </a>
     </div>
-
 
 
     {/* Background Hover Effect */}

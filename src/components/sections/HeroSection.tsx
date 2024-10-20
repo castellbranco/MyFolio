@@ -10,7 +10,7 @@ const HeroSection = () => {
       
       {/* Avatar positioned at top-left */}
       <div className="absolute top-16 -right-40 sm:-right-40 sm:top-16">
-        <Avatar className="size-44 sm:size-44 border">
+        <Avatar className="size-44 sm:size-44 border-4 bg-white">
           <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
           <AvatarFallback>{DATA.initials}</AvatarFallback>
         </Avatar>

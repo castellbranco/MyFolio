@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
 import {
   BellIcon,
   CalendarIcon,
@@ -109,7 +110,7 @@ export const DATA = {
     {
       Icon: () =>
         <>
-          <MixIcon className="h-10 w-10" />
+          <MixIcon className="h-10 w-10 text-gray-800" />
         </>,
       name: "Ongoing Project",
       description: "A side project that I'm working on",
@@ -143,24 +144,8 @@ export const DATA = {
       technologie: [],
       background: <img className="absolute -right-20 -top-20 opacity-30" />,
       className:
-        "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-100 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none",
-    },    
-    // {
-    //   school: "University of Science of Lisbon",
-    //   href: "https://ciencias.ulisboa.pt/",
-    //   degree: "Bachelor's Degree of Computer Science (BCS)",
-    //   logoUrl: "/fcul.png",
-    //   start: "2018",
-    //   end: "2022",
-    // },
-    // {
-    //   school: "NOVA Information Management School",
-    //   href: "https://www.novaims.unl.pt/",
-    //   degree: "Master in Information Management",
-    //   logoUrl: "/nova.jpg",
-    //   start: "2022",
-    //   end: "2024",
-    // },
+        "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none",
+    },
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]">
@@ -182,56 +167,6 @@ export const DATA = {
       background: <img className="absolute -right-20 -top-20 opacity-60" />,
       className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
     },
-  ],
-  work: [
-    {
-      company: "NTT Data",
-      href: "https://www.nttdata.com/global/en/",
-      badges: [],
-      location: "Remote/Portugal",
-      title: "Junior Engineer",
-      logoUrl: "/ntt.svg",
-      start: "January 2024",
-      end: "Present",
-    },
-    {
-      company: "Codyfight",
-      badges: [],
-      href: "https://codyfight.com/",
-      location: "Remote",
-      title: "Senior Community Manager & Debugger",
-      logoUrl: "/cody.png",
-      start: "February 2022",
-      end: "September 2023",
-      description:
-        "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
-      technologie: [
-        "Solidity",
-        "Marketing",
-        "Software Design",
-        "Social Media",
-        "Better Communication & Teamwork",
-      ],
-    },
-    {
-      company: "Myra",
-      badges: [],
-      href: "https://www.instagram.com/myra_pt/",
-      location: "Insight",
-      title: "Founder",
-      logoUrl: "/myra.jpg",
-      start: "January 2018",
-      end: "Present",
-      description:
-        "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
-      technologie: [
-        "Innovation",
-        "Social Media Platforms",
-        "Google Analytics",
-        "Shopify",
-        "Adobe Photoshop",
-      ],
-    }
   ],
   extra: [
     {
@@ -310,24 +245,6 @@ export const DATA = {
       ],
     }
   ],
-  education: [
-    {
-      school: "University of Science of Lisbon",
-      href: "https://ciencias.ulisboa.pt/",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/fcul.png",
-      start: "2018",
-      end: "2022",
-    },
-    {
-      school: "NOVA Information Management School",
-      href: "https://www.novaims.unl.pt/",
-      degree: "Master in Information Management",
-      logoUrl: "/nova.jpg",
-      start: "2022",
-      end: "2024",
-    },
-  ],
   projects: [
     {
       title: "Mental Health App",
@@ -353,30 +270,31 @@ export const DATA = {
       video:
         "/MentalApp.mp4",
     },
-    {
-      title: "Mental Health App",
-      href: "https://github.com/castellbranco/ML_Mental-Health-App",
-      dates: "Oct 2023 - Jan 2024",
-      active: true,
-      description:
-        "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
-      technologies: [
-        "Next.js",
-        "Python",
-        "LLM's",
-        "PKL models",
-      ],
-      links: [
-        {
-          type: "Project",
-          href: "https://github.com/castellbranco/ML_Mental-Health-App",
-          icon: <Icons.folder className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "/MentalApp.mp4",
-    },
+  ],
+        // {
+    //   title: "Mental Health App",
+    //   href: "https://github.com/castellbranco/ML_Mental-Health-App",
+    //   dates: "Oct 2023 - Jan 2024",
+    //   active: true,
+    //   description:
+    //     "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Python",
+    //     "LLM's",
+    //     "PKL models",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Project",
+    //       href: "https://github.com/castellbranco/ML_Mental-Health-App",
+    //       icon: <Icons.folder className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "/MentalApp.mp4",
+    // },
     // {
     //   title: "Magic UI",
     //   href: "https://magicui.design",
@@ -409,5 +327,48 @@ export const DATA = {
     //   image: "",
     //   video: "https://cdn.magicui.design/bento-grid.mp4",
     // },
-  ],
+reviews: [
+  {
+    name: "University of Science of Lisbon",
+    username: "Head Coach [Volleyball, Men]",
+    body: "September 2024 - Present",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "University Autónoma of Lisbon",
+    username: "Head Coach [Volleyball, Women]",
+    body: "September 2023 - September 2024",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    name: "Elo Social",
+    username: "IT Support",
+    body: "January 2019 - January 2020",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    name: "Web Summit",
+    username: "Volunteer",
+    body: "January 2019 - January 2021",
+    img: "https://avatar.vercel.sh/jane",
+  },
+  {
+    name: "Volleyball Athlete",
+    username: "Professional/University",
+    body: "January 2008 - Present",
+    img: "https://avatar.vercel.sh/jenny",
+  },
+  {
+    name: "Fluent in Portuguese",
+    username: "Born and raised in Portugal",
+    body: " ",
+    img: "https://avatar.vercel.sh/james",
+  },
+  {
+    name: "C1 Advanced in English",
+    username: "Cambridge University",
+    body: " ",
+    img: "https://avatar.vercel.sh/james",
+  },
+],
 } as const;

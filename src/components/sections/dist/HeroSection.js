@@ -8,7 +8,7 @@ var MaxWidthWrapper_1 = require("@/components/ui/MaxWidthWrapper");
 var HeroSection = function () {
     return (React.createElement(MaxWidthWrapper_1["default"], { className: "grid min-h-screen grid-cols-1 items-center sm:grid-cols-2 relative" },
         React.createElement("div", { className: "absolute top-16 -right-40 sm:-right-40 sm:top-16" },
-            React.createElement(avatar_1.Avatar, { className: "size-44 sm:size-44 border" },
+            React.createElement(avatar_1.Avatar, { className: "size-44 sm:size-44 border-4 bg-white" },
                 React.createElement(avatar_1.AvatarImage, { alt: resume_1.DATA.name, src: resume_1.DATA.avatarUrl }),
                 React.createElement(avatar_1.AvatarFallback, null, resume_1.DATA.initials))),
         React.createElement("div", { className: "text-center sm:ml-20 sm:text-left flex flex-col items-center sm:items-start mt-12 sm:mt-0" },
