@@ -1,5 +1,5 @@
 {
-  "homepage": "http://castellbranco.github.io/MyFolio",
+  "homepage": "https://castellbranco.github.io/MyFolio",
   "name": "porfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,7 @@
     "dev": "next dev",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "build": "next build",
     "export": "next export",
     "lint": "next lint"
