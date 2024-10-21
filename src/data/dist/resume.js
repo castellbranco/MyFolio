@@ -12,7 +12,7 @@ exports.DATA = {
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
     summary: "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-    avatarUrl: "public\me.png",
+    avatarUrl: "/public/me.png",
     skills: [
         "Python",
         "SQL",
@@ -57,7 +57,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]" },
-                    React.createElement("img", { src: "/public/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
+                    React.createElement("img", { src: "public/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
             },
             name: "Junior Engineer",
             description: "Ntt Data [Jan 2024 - Present]",
