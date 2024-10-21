@@ -4,6 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import { DATA } from "@/data/resume";
 import Marquee from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 const BLUR_FADE_DELAY = 0.04;
 

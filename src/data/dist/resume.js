@@ -7,7 +7,7 @@ var lucide_react_1 = require("lucide-react");
 exports.DATA = {
     name: "Guilherme Castel-Branco",
     initials: "GV",
-    url: "",
+    url: "https://castellbranco.github.io/MyFolio/",
     location: "Lisbon, Portugal",
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
@@ -70,7 +70,7 @@ exports.DATA = {
                 "Pyspark",
                 "Python & SQL",
             ],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
+            background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-60" }),
             className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3"
         },
         {
@@ -90,7 +90,7 @@ exports.DATA = {
                 "Social Media",
                 "Better Communication & Teamwork",
             ],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
+            background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-60" }),
             className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
         },
         {
@@ -104,7 +104,7 @@ exports.DATA = {
             cta: "Know more",
             desc: "",
             technologie: [],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
+            background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-60" }),
             className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 pointer-events-none"
         },
         {
@@ -119,7 +119,7 @@ exports.DATA = {
             cta: "",
             desc: "",
             technologie: [],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-30" }),
+            background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-30" }),
             className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none"
         },
         {
@@ -139,7 +139,7 @@ exports.DATA = {
                 "Shopify",
                 "Adobe Photoshop",
             ],
-            background: React.createElement("img", { className: "absolute -right-20 -top-20 opacity-60" }),
+            background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-60" }),
             className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4"
         },
     ],

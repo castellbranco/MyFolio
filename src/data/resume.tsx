@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import Image from 'next/image';
 import { cn } from "@/lib/utils";
 import {
   BellIcon,
@@ -15,7 +16,7 @@ import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
 export const DATA = {
   name: "Guilherme Castel-Branco",
   initials: "GV",
-  url: "",
+  url: "https://castellbranco.github.io/MyFolio/",
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
@@ -84,7 +85,7 @@ export const DATA = {
         "Pyspark",
         "Python & SQL",
       ],
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+      background: <image className="absolute -right-20 -top-20 opacity-60" />,
       className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
     },
     {
@@ -105,7 +106,7 @@ export const DATA = {
         "Social Media",
         "Better Communication & Teamwork",
       ],
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+      background: <image className="absolute -right-20 -top-20 opacity-60" />,
       className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
     },
     {
@@ -119,7 +120,7 @@ export const DATA = {
       cta: "Know more",
       desc: "",
       technologie: [],
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+      background: <image className="absolute -right-20 -top-20 opacity-60" />,
       className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 pointer-events-none",
     },
     {
@@ -135,7 +136,7 @@ export const DATA = {
             University of Science of Lisbon
           </span>
           <span className="block">
-            Bachelor's Degree of Computer Science (BCS)
+            Bachelor&apos;s Degree of Computer Science (BCS)
           </span>
         </span>
       ),
@@ -143,7 +144,7 @@ export const DATA = {
       cta: "",
       desc: "",
       technologie: [],
-      background: <img className="absolute -right-20 -top-20 opacity-30" />,
+      background: <image className="absolute -right-20 -top-20 opacity-30" />,
       className:
         "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none",
     },
@@ -165,7 +166,7 @@ export const DATA = {
         "Shopify",
         "Adobe Photoshop",
       ],
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
+      background: <image className="absolute -right-20 -top-20 opacity-60" />,
       className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
     },
   ],
