@@ -10,6 +10,7 @@ import {
   MixIcon
 } from "@radix-ui/react-icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
 
 export const DATA = {
   name: "Guilherme Castel-Branco",
@@ -332,43 +333,43 @@ reviews: [
     name: "University of Science of Lisbon",
     username: "Head Coach [Volleyball, Men]",
     body: "September 2024 - Present",
-    img: "https://avatar.vercel.sh/jack",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/bug.png",
   },
   {
     name: "University Autónoma of Lisbon",
     username: "Head Coach [Volleyball, Women]",
     body: "September 2023 - September 2024",
-    img: "https://avatar.vercel.sh/jill",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/fighting.png",
   },
   {
     name: "Elo Social",
     username: "IT Support",
     body: "January 2019 - January 2020",
-    img: "https://avatar.vercel.sh/john",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/water.png",
   },
   {
     name: "Web Summit",
     username: "Volunteer",
     body: "January 2019 - January 2021",
-    img: "https://avatar.vercel.sh/jane",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/ice.png",
   },
   {
     name: "Volleyball Athlete",
     username: "Professional/University",
     body: "January 2008 - Present",
-    img: "https://avatar.vercel.sh/jenny",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/rock.png",
   },
   {
     name: "Fluent in Portuguese",
     username: "Born and raised in Portugal",
     body: " ",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/poison.png",
   },
   {
     name: "C1 Advanced in English",
     username: "Cambridge University",
     body: " ",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://raw.githubusercontent.com/msikma/pokesprite/master/items/tr/ground.png",
   },
 ],
 } as const;
