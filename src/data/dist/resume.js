@@ -12,7 +12,7 @@ exports.DATA = {
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
     summary: "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I’ve worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-    avatarUrl: "/public/me.png",
+    avatarUrl: "public\me.png",
     skills: [
         "Python",
         "SQL",
