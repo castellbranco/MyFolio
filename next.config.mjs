@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  basePath: isProd ? '/MyFolio' : '', // Assuming your repo is called MyFolio
-  assetPrefix: isProd ? '/MyFolio/' : '',
-  reactStrictMode: true,
-  output: 'export',
+  basePath: isProd ? '/MyFolio' : '', // Important: set to your GitHub Pages subdirectory
+  assetPrefix: isProd ? '/MyFolio/' : '', // Important: prefix static assets with the subdirectory
+  output: 'export', // Export static HTML
   images: {
-    unoptimized: true, // Because GitHub Pages doesn't support dynamic image optimization
+    unoptimized: true, // Disable image optimization (GitHub Pages doesn't support it)
   },
 };
 
 export default nextConfig;
+
