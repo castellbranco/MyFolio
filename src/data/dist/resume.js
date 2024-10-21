@@ -4,6 +4,8 @@ exports.DATA = void 0;
 var icons_1 = require("@/components/icons");
 var react_icons_1 = require("@radix-ui/react-icons");
 var lucide_react_1 = require("lucide-react");
+var isProd = process.env.NODE_ENV === 'production';
+var basePath = isProd ? '/MyFolio' : '';
 exports.DATA = {
     name: "Guilherme Castel-Branco",
     initials: "GV",
@@ -12,7 +14,7 @@ exports.DATA = {
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
     summary: "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-    avatarUrl: "/public/me.png",
+    avatarUrl: basePath + "/me.png",
     skills: [
         "Python",
         "SQL",
@@ -57,7 +59,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]" },
-                    React.createElement("img", { src: "public/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
+                    React.createElement("img", { src: basePath + "/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
             },
             name: "Junior Engineer",
             description: "Ntt Data [Jan 2024 - Present]",
