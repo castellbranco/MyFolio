@@ -78,7 +78,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]" },
-                    React.createElement("img", { src: "/cody.png", alt: "Codyfight Logo", className: "h-20 w-20" }));
+                    React.createElement("img", { src: basePath + "/cody.png", alt: "Codyfight Logo", className: "h-20 w-20" }));
             },
             name: "Senior Community Manager & Debugger",
             description: "Codyfight [Feb 2022 - Sep 2023]",
@@ -127,7 +127,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]" },
-                    React.createElement("img", { src: "/myra_trans.png", alt: "Myra Logo", className: "h-20 w-20" }));
+                    React.createElement("img", { src: basePath + "/myra_trans.png", alt: "Myra Logo", className: "h-20 w-20" }));
             },
             name: "Founder",
             description: "Myra [Jan 2018 - Present]",
@@ -152,7 +152,7 @@ exports.DATA = {
             badges: [],
             location: "Lisbon, Portugal",
             title: "Head Coach [Volleyball, Men]",
-            logoUrl: "/fcul.png",
+            logoUrl: basePath + "/fcul.png",
             start: "September 2024",
             end: "Present",
             description: "Engineered data pipelines using Databricks, SQL, and Python to optimize the Global Energy Market Operating System (GEMOS) for a leading energy provider. Implemented data warehouse architecture for real-time energy market analysis and reporting. Collaborated in an Agile environment, driving innovation and process improvements. Designed scalable data solutions to enhance performance and accuracy, supporting global market operations.",
@@ -169,7 +169,7 @@ exports.DATA = {
             href: "https://autonoma.pt/",
             location: "Lisbon, Portugal",
             title: "Head Coach [Volleyball, Women]",
-            logoUrl: "/UAL.jpg",
+            logoUrl: basePath + "/UAL.jpg",
             start: "September 2023",
             end: "September 2024",
             description: "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
@@ -187,7 +187,7 @@ exports.DATA = {
             href: "https://www.elosocial.org/",
             location: "Lisbon, Portugal",
             title: "IT Support",
-            logoUrl: "/myra.jpg",
+            logoUrl: basePath + "/fcul.jpg",
             start: "January 2019",
             end: "January 2020",
             description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
@@ -205,7 +205,7 @@ exports.DATA = {
             href: "https://websummit.com/",
             location: "Lisbon, Portugal",
             title: "Volunteer",
-            logoUrl: "/myra.jpg",
+            logoUrl: basePath + "/myra.jpg",
             start: "January 2019",
             end: "January 2021",
             description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
@@ -239,7 +239,7 @@ exports.DATA = {
                 },
             ],
             image: "",
-            video: "/MentalApp.mp4"
+            video: basePath + "/MentalApp.mp4"
         },
     ],
     // {

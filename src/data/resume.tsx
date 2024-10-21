@@ -93,7 +93,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]">
-          <img src="/cody.png" alt="Codyfight Logo" className="h-20 w-20" />
+          <img src={`${basePath}/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
         </div>,
       name: "Senior Community Manager & Debugger",
       description: "Codyfight [Feb 2022 - Sep 2023]",
@@ -153,7 +153,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]">
-          <img src="/myra_trans.png" alt="Myra Logo" className="h-20 w-20" />
+          <img src={`${basePath}/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
         </div>,
       name: "Founder",
       description: "Myra [Jan 2018 - Present]",
@@ -179,7 +179,7 @@ export const DATA = {
       badges: [],
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Men]",
-      logoUrl: "/fcul.png",
+      logoUrl: `${basePath}/fcul.png`,
       start: "September 2024",
       end: "Present",
       description:
@@ -197,7 +197,7 @@ export const DATA = {
       href: "https://autonoma.pt/",
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Women]",
-      logoUrl: "/UAL.jpg",
+      logoUrl: `${basePath}/UAL.jpg`,
       start: "September 2023",
       end: "September 2024",
       description:
@@ -216,7 +216,7 @@ export const DATA = {
       href: "https://www.elosocial.org/",
       location: "Lisbon, Portugal",
       title: "IT Support",
-      logoUrl: "/myra.jpg",
+      logoUrl: `${basePath}/fcul.jpg`,
       start: "January 2019",
       end: "January 2020",
       description:
@@ -235,7 +235,7 @@ export const DATA = {
       href: "https://websummit.com/",
       location: "Lisbon, Portugal",
       title: "Volunteer",
-      logoUrl: "/myra.jpg",
+      logoUrl: `${basePath}/myra.jpg`,
       start: "January 2019",
       end: "January 2021",
       description:
@@ -272,7 +272,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "/MentalApp.mp4",
+      `${basePath}/MentalApp.mp4`,
     },
   ],
         // {
