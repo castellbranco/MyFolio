@@ -13,7 +13,7 @@ import {
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/MyFolio' : '';
+const basePath = isProd ? '' : '';
 
 export const DATA = {
   name: "Guilherme Castel-Branco",
