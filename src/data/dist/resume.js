@@ -5,7 +5,7 @@ var icons_1 = require("@/components/icons");
 var react_icons_1 = require("@radix-ui/react-icons");
 var lucide_react_1 = require("lucide-react");
 var isProd = process.env.NODE_ENV === 'production';
-var basePath = isProd ? '/MyFolio' : '';
+var basePath = isProd ? '' : '';
 exports.DATA = {
     name: "Guilherme Castel-Branco",
     initials: "GV",
