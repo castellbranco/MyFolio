@@ -9,7 +9,7 @@ var basePath = isProd ? '/MyFolio' : '';
 exports.DATA = {
     name: "Guilherme Castel-Branco",
     initials: "GV",
-    url: "https://castellbranco.github.io/MyFolio/",
+    url: "https://castellbranco.com",
     location: "Lisbon, Portugal",
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",

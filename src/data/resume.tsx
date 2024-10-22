@@ -18,7 +18,7 @@ const basePath = isProd ? '/MyFolio' : '';
 export const DATA = {
   name: "Guilherme Castel-Branco",
   initials: "GV",
-  url: "https://castellbranco.github.io/MyFolio/",
+  url: "https://castellbranco.com",
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:

@@ -20,7 +20,7 @@ exports.metadata = {
         catch (e) {
             console.error("Invalid URL:", resume_1.DATA.url, e);
             // Fallback to a default URL if invalid
-            return new URL("https://castellbranco.github.io/MyFolio/"); // Adjust this default URL as needed
+            return new URL("https://castellbranco.com"); // Adjust this default URL as needed
         }
     })(),
     title: {
