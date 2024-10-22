@@ -13,12 +13,12 @@ import {
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '' : '';
+const basePath = isProd ? '/MyFolio' : '';
 
 export const DATA = {
   name: "Guilherme Castel-Branco",
   initials: "GV",
-  url: "https://castellbranco.com",
+  url: "https://castellbranco.github.io/MyFolio/",
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
