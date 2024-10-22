@@ -32,15 +32,15 @@ const ContactSection = () => {
                 {/* Email Icon */}
                 <EnvelopeOpenIcon className="text-xl" />
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:guicbranco1@gmail.com"
                   className="text-lg text-primary hover:underline"
                 >
-                  your-email@example.com
+                  My Email
                 </a>
                 {/* LinkedIn Icon */}
                 <LinkedInLogoIcon className="text-xl" />
                 <a
-                  href="https://www.linkedin.com/in/your-profile" // Replace with your actual LinkedIn profile link
+                  href="https://www.linkedin.com/in/guilherme-castel-branco-73a17719b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg text-primary hover:underline"

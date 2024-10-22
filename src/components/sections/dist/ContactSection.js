@@ -16,9 +16,8 @@ var ContactSection = function () {
                         react_1["default"].createElement("p", { className: "mx-auto max-w-[600px] text-muted-foreground md:text-lg lg:text-base xl:text-xl" }, "Want to chat? Feel free to reach out to me via email or social media. I will respond as soon as possible!"),
                         react_1["default"].createElement("div", { className: "flex justify-center items-center gap-6 text-muted-foreground" },
                             react_1["default"].createElement(react_icons_1.EnvelopeOpenIcon, { className: "text-xl" }),
-                            react_1["default"].createElement("a", { href: "mailto:your-email@example.com", className: "text-lg text-primary hover:underline" }, "your-email@example.com"),
+                            react_1["default"].createElement("a", { href: "mailto:guicbranco1@gmail.com", className: "text-lg text-primary hover:underline" }, "My Email"),
                             react_1["default"].createElement(react_icons_1.LinkedInLogoIcon, { className: "text-xl" }),
-                            react_1["default"].createElement("a", { href: "https://www.linkedin.com/in/your-profile" // Replace with your actual LinkedIn profile link
-                                , target: "_blank", rel: "noopener noreferrer", className: "text-lg text-primary hover:underline" }, "LinkedIn"))))))));
+                            react_1["default"].createElement("a", { href: "https://www.linkedin.com/in/guilherme-castel-branco-73a17719b/", target: "_blank", rel: "noopener noreferrer", className: "text-lg text-primary hover:underline" }, "LinkedIn"))))))));
 };
 exports["default"] = ContactSection;
