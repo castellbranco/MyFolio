@@ -1,5 +1,7 @@
 "use strict";
 
+require("./globals.css");
+
 exports.__esModule = true;
 exports.metadata = void 0;
 
