@@ -1,5 +1,4 @@
 "use strict";
-import "C:/Users/Lenovo/portfolio/src/app/globals.css";
 exports.__esModule = true;
 exports.metadata = void 0;
 var navbar_1 = require("@/components/navbar");

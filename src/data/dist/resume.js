@@ -47,7 +47,7 @@ exports.DATA = {
             },
             Resume: {
                 name: "Resume",
-                url: "https://drive.google.com/file/d/1iFImpebQLg-M3MCZBQVisXycZO4B-izt/view",
+                url: "#",
                 icon: icons_1.Icons.resume,
                 navbar: true
             }
@@ -143,6 +143,79 @@ exports.DATA = {
             className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4"
         },
     ],
+    extra: [
+        {
+            company: "University of Science of Lisbon",
+            href: "https://ciencias.ulisboa.pt/",
+            badges: [],
+            location: "Lisbon, Portugal",
+            title: "Head Coach [Volleyball, Men]",
+            logoUrl: "/fcul.png",
+            start: "September 2024",
+            end: "Present",
+            description: "Engineered data pipelines using Databricks, SQL, and Python to optimize the Global Energy Market Operating System (GEMOS) for a leading energy provider. Implemented data warehouse architecture for real-time energy market analysis and reporting. Collaborated in an Agile environment, driving innovation and process improvements. Designed scalable data solutions to enhance performance and accuracy, supporting global market operations.",
+            technologie: [
+                "Databricks",
+                "Azure",
+                "Pyspark",
+                "Python & SQL",
+            ]
+        },
+        {
+            company: "University Autónoma of Lisbon",
+            badges: [],
+            href: "https://autonoma.pt/",
+            location: "Lisbon, Portugal",
+            title: "Head Coach [Volleyball, Women]",
+            logoUrl: "/UAL.jpg",
+            start: "September 2023",
+            end: "September 2024",
+            description: "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
+            technologie: [
+                "Solidity",
+                "Marketing",
+                "Software Design",
+                "Social Media",
+                "Better Communication & Teamwork",
+            ]
+        },
+        {
+            company: "Elo Social",
+            badges: [],
+            href: "https://www.elosocial.org/",
+            location: "Lisbon, Portugal",
+            title: "IT Support",
+            logoUrl: "/fcul.jpg",
+            start: "January 2019",
+            end: "January 2020",
+            description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
+            technologie: [
+                "Innovation",
+                "Social Media Platforms",
+                "Google Analytics",
+                "Shopify",
+                "Adobe Photoshop",
+            ]
+        },
+        {
+            company: "Web Summit",
+            badges: [],
+            href: "https://websummit.com/",
+            location: "Lisbon, Portugal",
+            title: "Volunteer",
+            logoUrl: "/myra.jpg",
+            start: "January 2019",
+            end: "January 2021",
+            description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
+            technologie: [
+                "Innovation",
+                "Social Media Platforms",
+                "Google Analytics",
+                "Shopify",
+                "Adobe Photoshop",
+            ]
+        }
+    ],
     projects: [
         {
             title: "Mental Health App",
@@ -190,6 +263,38 @@ exports.DATA = {
     //   image: "",
     //   video:
     //     "/MentalApp.mp4",
+    // },
+    // {
+    //   title: "Magic UI",
+    //   href: "https://magicui.design",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Designed, developed and sold animated UI components for developers.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "TailwindCSS",
+    //     "Stripe",
+    //     "Shadcn UI",
+    //     "Magic UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://magicui.design",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/magicuidesign/magicui",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
     // },
     reviews: [
         {

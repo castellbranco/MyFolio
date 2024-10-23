@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    /* Reverting back to the original settings */
     --background: 0 0% 92%; /* White Smoke with 92% lightness */
     --foreground: 240 10% 3.9%;
 
@@ -36,40 +35,36 @@
     --radius: 0.5rem;
   }
 
-  /* Dark mode */
   .dark {
-    /* Only adjusting necessary variables for dark mode */
-    --background: hsl(240, 10%, 10%);  /* A deeper shade for the background */
-    --foreground: hsl(0, 0%, 95%);     /* Lighter foreground for better contrast */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: hsl(240, 10%, 15%);        /* Slightly different for cards */
-    --card-foreground: hsl(0, 0%, 95%);
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: hsl(240, 10%, 15%);
-    --popover-foreground: hsl(0, 0%, 95%);
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: hsl(0, 0%, 98%);
-    --primary-foreground: hsl(240, 5.9%, 10%);
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
 
-    --secondary: hsl(240, 5.9%, 10%);
-    --secondary-foreground: hsl(240, 4.8%, 95.9%);
+    --secondary: 240 5.9% 10%;
+    --secondary-foreground: 240 4.8% 95.9%;
 
-    --muted: hsl(240, 5.9%, 10%);
-    --muted-foreground: hsl(240, 4.8%, 95.9%);
+    --muted: 240 5.9% 10%;
+    --muted-foreground: 240 4.8% 95.9%;
 
-    --accent: hsl(240, 5.9%, 10%);
-    --accent-foreground: hsl(240, 4.8%, 95.9%);
+    --accent: 240 5.9% 10%;
+    --accent-foreground: 240 4.8% 95.9%;
 
-    --destructive: hsl(0, 84.2%, 60.2%);
-    --destructive-foreground: hsl(0, 0%, 98%);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: hsl(240, 10%, 30%);
-    --input: hsl(240, 10%, 30%);
-    --ring: hsl(240, 10%, 10%);
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 0 0% 98%;
   }
 }
-
-
 
 @layer base {
   * {
@@ -87,7 +82,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #F5F5F5;
+  background: white;
 }
 
 /* Handle */

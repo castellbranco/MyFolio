@@ -1,7 +1,5 @@
 "use strict";
 
-require("C:/Users/Lenovo/portfolio/src/app/globals.css");
-
 exports.__esModule = true;
 exports.metadata = void 0;
 
