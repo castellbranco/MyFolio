@@ -1,8 +1,19 @@
 import { Icons } from "@/components/icons";
+import Image from 'next/image';
+import { cn } from "@/lib/utils";
 import {
+  BellIcon,
+  CalendarIcon,
+  FileTextIcon,
+  GlobeIcon,
+  InputIcon,
+  LockClosedIcon,
   MixIcon
 } from "@radix-ui/react-icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/MyFolio' : '';
 
 export const DATA = {
   name: "Guilherme Castel-Branco",
@@ -14,7 +25,7 @@ export const DATA = {
     "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
   summary:
     "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-  avatarUrl: `/me.png`,
+  avatarUrl: `${basePath}/me.png`,
   skills: [
     "Python",
     "SQL",
@@ -51,7 +62,7 @@ export const DATA = {
       },
       Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1iFImpebQLg-M3MCZBQVisXycZO4B-izt/view?usp=sharing",
+        url: "#",
         icon: Icons.resume,
 
         navbar: true,
@@ -62,7 +73,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]">
-          <img src={`/ntt.svg`} alt="NTT Logo" className="h-35 w-35" />
+          <img src={`${basePath}/ntt.svg`} alt="NTT Logo" className="h-35 w-35" />
         </div>,
       name: "Junior Engineer",
       description: "Ntt Data [Jan 2024 - Present]",
@@ -82,7 +93,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]">
-          <img src={`/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
+          <img src={`${basePath}/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
         </div>,
       name: "Senior Community Manager & Debugger",
       description: "Codyfight [Feb 2022 - Sep 2023]",
@@ -142,7 +153,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]">
-          <img src={`/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
+          <img src={`${basePath}/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
         </div>,
       name: "Founder",
       description: "Myra [Jan 2018 - Present]",
@@ -168,7 +179,7 @@ export const DATA = {
       badges: [],
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Men]",
-      logoUrl: `/fcul.png`,
+      logoUrl: `${basePath}/fcul.png`,
       start: "September 2024",
       end: "Present",
       description:
@@ -186,7 +197,7 @@ export const DATA = {
       href: "https://autonoma.pt/",
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Women]",
-      logoUrl: `/UAL.jpg`,
+      logoUrl: `${basePath}/UAL.jpg`,
       start: "September 2023",
       end: "September 2024",
       description:
@@ -205,7 +216,7 @@ export const DATA = {
       href: "https://www.elosocial.org/",
       location: "Lisbon, Portugal",
       title: "IT Support",
-      logoUrl: `/fcul.jpg`,
+      logoUrl: `${basePath}/fcul.jpg`,
       start: "January 2019",
       end: "January 2020",
       description:
@@ -224,7 +235,7 @@ export const DATA = {
       href: "https://websummit.com/",
       location: "Lisbon, Portugal",
       title: "Volunteer",
-      logoUrl: `/myra.jpg`,
+      logoUrl: `${basePath}/myra.jpg`,
       start: "January 2019",
       end: "January 2021",
       description:
@@ -261,10 +272,65 @@ export const DATA = {
       ],
       image: "",
       video:
-      `/MentalApp.mp4`,
+      `${basePath}/MentalApp.mp4`,
     },
   ],
-
+        // {
+    //   title: "Mental Health App",
+    //   href: "https://github.com/castellbranco/ML_Mental-Health-App",
+    //   dates: "Oct 2023 - Jan 2024",
+    //   active: true,
+    //   description:
+    //     "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Python",
+    //     "LLM's",
+    //     "PKL models",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Project",
+    //       href: "https://github.com/castellbranco/ML_Mental-Health-App",
+    //       icon: <Icons.folder className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "/MentalApp.mp4",
+    // },
+    // {
+    //   title: "Magic UI",
+    //   href: "https://magicui.design",
+    //   dates: "June 2023 - Present",
+    //   active: true,
+    //   description:
+    //     "Designed, developed and sold animated UI components for developers.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "PostgreSQL",
+    //     "Prisma",
+    //     "TailwindCSS",
+    //     "Stripe",
+    //     "Shadcn UI",
+    //     "Magic UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://magicui.design",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/magicuidesign/magicui",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "https://cdn.magicui.design/bento-grid.mp4",
+    // },
 reviews: [
   {
     name: "University of Science of Lisbon",

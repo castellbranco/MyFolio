@@ -6,7 +6,7 @@ var theme_provider_1 = require("@/components/theme-provider");
 var tooltip_1 = require("@/components/ui/tooltip");
 var resume_1 = require("@/data/resume");
 var google_1 = require("next/font/google");
-require("@/app/globals.css");
+require("./globals.css");
 var fontSans = google_1.Inter({
     subsets: ["latin"],
     variable: "--font-sans"

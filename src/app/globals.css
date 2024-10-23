@@ -82,7 +82,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #F5F5F5;
+  background: white;
 }
 
 /* Handle */
@@ -93,5 +93,5 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F5F5F5;
+  background: #3e3e3e;
 }

@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var dock_1 = require("@/components/magicui/dock");
+var mode_toggle_1 = require("@/components/mode-toggle");
 var button_1 = require("@/components/ui/button");
 var separator_1 = require("@/components/ui/separator");
 var tooltip_1 = require("@/components/ui/tooltip");
@@ -34,6 +35,12 @@ function Navbar() {
                         React.createElement(tooltip_1.TooltipContent, null,
                             React.createElement("p", null, name)))));
             }),
-            React.createElement(separator_1.Separator, { orientation: "vertical", className: "h-full py-2" }))));
+            React.createElement(separator_1.Separator, { orientation: "vertical", className: "h-full py-2" }),
+            React.createElement(dock_1.DockIcon, null,
+                React.createElement(tooltip_1.Tooltip, null,
+                    React.createElement(tooltip_1.TooltipTrigger, { asChild: true },
+                        React.createElement(mode_toggle_1.ModeToggle, null)),
+                    React.createElement(tooltip_1.TooltipContent, null,
+                        React.createElement("p", null, "Theme")))))));
 }
 exports["default"] = Navbar;

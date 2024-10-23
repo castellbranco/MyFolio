@@ -14,7 +14,7 @@ var HeroSection = function () {
         React.createElement("div", { className: "text-center sm:ml-20 sm:text-left flex flex-col items-center sm:items-start mt-12 sm:mt-0" },
             React.createElement("h1", { className: "mb-2 text-3xl sm:text-5xl font-semibold" },
                 "Hi, I'm Guilherme",
-                React.createElement("div", { className: "inline-block animate-rotate text-3xl sm:text-4xl" }, " \uD83D\uDC4B")),
+                React.createElement("div", { className: "inline-block animate-rotate text-3xl sm:text-4xl" }, "\uD83D\uDC4B")),
             React.createElement("h3", null,
                 React.createElement("div", { className: "flex justify-start items-center text-gray-400", style: { margin: 0 } },
                     React.createElement("div", { className: "h-[20px] w-[20px] custom" },
@@ -23,13 +23,9 @@ var HeroSection = function () {
                     React.createElement("span", { className: "w-fit", style: { margin: 0 } }, "Lisbon, Portugal"))),
             React.createElement("p", { className: "max-w-prose px-10 text-base sm:text-xl sm:px-0" }, resume_1.DATA.description)),
         React.createElement("div", { className: "relative flex h-full w-full max-w-[28rem] sm:max-w-[32rem] items-center justify-center overflow-hidden rounded-lg bg-background mt-6" },
-            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", radius: 90, duration: 20, delay: 0 },
-                React.createElement(icons_1.Icons.react, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
-            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", radius: 90, duration: 20, delay: 5 },
-                React.createElement(icons_1.Icons.sql, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
-            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", radius: 90, duration: 20, delay: 10 },
+            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", duration: 20, delay: 20, radius: 90 },
                 React.createElement(icons_1.Icons.java, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
-            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", radius: 90, duration: 20, delay: 15 },
+            React.createElement(orbiting_circles_1["default"], { className: "h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent", duration: 20, delay: 10, radius: 90 },
                 React.createElement(icons_1.Icons.python, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
             React.createElement(orbiting_circles_1["default"], { className: "h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] border-none bg-transparent", radius: 160, duration: 40, reverse: true },
                 React.createElement(icons_1.Icons.databricks, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
@@ -38,6 +34,6 @@ var HeroSection = function () {
             React.createElement(orbiting_circles_1["default"], { className: "h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] border-none bg-transparent", radius: 160, duration: 40, delay: 30, reverse: true },
                 React.createElement(icons_1.Icons.openai, { className: "h-6 w-6 sm:h-8 sm:w-8" })),
             React.createElement(orbiting_circles_1["default"], { className: "h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] border-none bg-transparent", radius: 160, duration: 40, delay: 40, reverse: true },
-                React.createElement(icons_1.Icons.jupyter, { className: "h-7 w-7 sm:h-8 sm:w-8" })))));
+                React.createElement(icons_1.Icons.jupyter, { className: "h-6 w-6 sm:h-8 sm:w-8" })))));
 };
 exports["default"] = HeroSection;
