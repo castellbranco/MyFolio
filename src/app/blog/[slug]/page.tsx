@@ -10,6 +10,11 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
+interface PageProps {
+  params: { slug: string };
+  searchParams?: any;
+}
+
 export async function generateMetadata({
   params,
 }: {
