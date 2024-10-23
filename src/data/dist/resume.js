@@ -47,7 +47,7 @@ exports.DATA = {
             },
             Resume: {
                 name: "Resume",
-                url: "#",
+                url: "https://drive.google.com/file/d/1iFImpebQLg-M3MCZBQVisXycZO4B-izt/view?usp=sharing",
                 icon: icons_1.Icons.resume,
                 navbar: true
             }
@@ -240,62 +240,6 @@ exports.DATA = {
             video: "/MentalApp.mp4"
         },
     ],
-    // {
-    //   title: "Mental Health App",
-    //   href: "https://github.com/castellbranco/ML_Mental-Health-App",
-    //   dates: "Oct 2023 - Jan 2024",
-    //   active: true,
-    //   description:
-    //     "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Python",
-    //     "LLM's",
-    //     "PKL models",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Project",
-    //       href: "https://github.com/castellbranco/ML_Mental-Health-App",
-    //       icon: <Icons.folder className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "/MentalApp.mp4",
-    // },
-    // {
-    //   title: "Magic UI",
-    //   href: "https://magicui.design",
-    //   dates: "June 2023 - Present",
-    //   active: true,
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://magicui.design",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/magicuidesign/magicui",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
     reviews: [
         {
             name: "University of Science of Lisbon",
