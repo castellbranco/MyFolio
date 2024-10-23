@@ -4,8 +4,6 @@ exports.DATA = void 0;
 var icons_1 = require("@/components/icons");
 var react_icons_1 = require("@radix-ui/react-icons");
 var lucide_react_1 = require("lucide-react");
-var isProd = process.env.NODE_ENV === 'production';
-var basePath = isProd ? '/MyFolio' : '';
 exports.DATA = {
     name: "Guilherme Castel-Branco",
     initials: "GV",
@@ -14,7 +12,7 @@ exports.DATA = {
     locationLink: "https://www.google.com/maps/place/Lisbon",
     description: "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
     summary: "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-    avatarUrl: basePath + "/me.png",
+    avatarUrl: "/me.png",
     skills: [
         "Python",
         "SQL",
@@ -59,7 +57,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]" },
-                    React.createElement("img", { src: basePath + "/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
+                    React.createElement("img", { src: "/ntt.svg", alt: "NTT Logo", className: "h-35 w-35" }));
             },
             name: "Junior Engineer",
             description: "Ntt Data [Jan 2024 - Present]",
@@ -78,7 +76,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]" },
-                    React.createElement("img", { src: basePath + "/cody.png", alt: "Codyfight Logo", className: "h-20 w-20" }));
+                    React.createElement("img", { src: "/cody.png", alt: "Codyfight Logo", className: "h-20 w-20" }));
             },
             name: "Senior Community Manager & Debugger",
             description: "Codyfight [Feb 2022 - Sep 2023]",
@@ -127,7 +125,7 @@ exports.DATA = {
         {
             Icon: function () {
                 return React.createElement("div", { className: "flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]" },
-                    React.createElement("img", { src: basePath + "/myra_trans.png", alt: "Myra Logo", className: "h-20 w-20" }));
+                    React.createElement("img", { src: "/myra_trans.png", alt: "Myra Logo", className: "h-20 w-20" }));
             },
             name: "Founder",
             description: "Myra [Jan 2018 - Present]",
@@ -152,7 +150,7 @@ exports.DATA = {
             badges: [],
             location: "Lisbon, Portugal",
             title: "Head Coach [Volleyball, Men]",
-            logoUrl: basePath + "/fcul.png",
+            logoUrl: "/fcul.png",
             start: "September 2024",
             end: "Present",
             description: "Engineered data pipelines using Databricks, SQL, and Python to optimize the Global Energy Market Operating System (GEMOS) for a leading energy provider. Implemented data warehouse architecture for real-time energy market analysis and reporting. Collaborated in an Agile environment, driving innovation and process improvements. Designed scalable data solutions to enhance performance and accuracy, supporting global market operations.",
@@ -169,7 +167,7 @@ exports.DATA = {
             href: "https://autonoma.pt/",
             location: "Lisbon, Portugal",
             title: "Head Coach [Volleyball, Women]",
-            logoUrl: basePath + "/UAL.jpg",
+            logoUrl: "/UAL.jpg",
             start: "September 2023",
             end: "September 2024",
             description: "Led community engagement and managed social media channels to grow and maintain an active player base. Debugged the Beta version of the game, working closely with the development team to improve gameplay and enhance the player experience. Created and executed content strategies for social media, driving player retention and interaction. Provided feedback and collaborated with the team to optimize the game's performance and resolve key technical issues.",
@@ -187,7 +185,7 @@ exports.DATA = {
             href: "https://www.elosocial.org/",
             location: "Lisbon, Portugal",
             title: "IT Support",
-            logoUrl: basePath + "/fcul.jpg",
+            logoUrl: "/fcul.jpg",
             start: "January 2019",
             end: "January 2020",
             description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
@@ -205,7 +203,7 @@ exports.DATA = {
             href: "https://websummit.com/",
             location: "Lisbon, Portugal",
             title: "Volunteer",
-            logoUrl: basePath + "/myra.jpg",
+            logoUrl: "/myra.jpg",
             start: "January 2019",
             end: "January 2021",
             description: "Founded and built Myra, a sustainable fashion brand, overseeing everything from product design to marketing and operations. Developed eco-friendly clothing lines that gained media attention and attracted a diverse customer base. Focused on blending creativity and sustainability to create a brand that fosters community and innovation.",
@@ -239,7 +237,7 @@ exports.DATA = {
                 },
             ],
             image: "",
-            video: basePath + "/MentalApp.mp4"
+            video: "/MentalApp.mp4"
         },
     ],
     // {

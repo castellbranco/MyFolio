@@ -1,19 +1,8 @@
 import { Icons } from "@/components/icons";
-import Image from 'next/image';
-import { cn } from "@/lib/utils";
 import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
-  LockClosedIcon,
   MixIcon
 } from "@radix-ui/react-icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import ExampleSvg from "C:/Users/Lenovo/portfolio/public/example.svg";
-const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/MyFolio' : '';
 
 export const DATA = {
   name: "Guilherme Castel-Branco",
@@ -25,7 +14,7 @@ export const DATA = {
     "A forward-thinking Software Engineer passionate about solving complex challenges with cutting-edge software and machine learning solutions.",
   summary:
     "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
-  avatarUrl: `${basePath}/me.png`,
+  avatarUrl: `/me.png`,
   skills: [
     "Python",
     "SQL",
@@ -73,7 +62,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]">
-          <img src={`${basePath}/ntt.svg`} alt="NTT Logo" className="h-35 w-35" />
+          <img src={`/ntt.svg`} alt="NTT Logo" className="h-35 w-35" />
         </div>,
       name: "Junior Engineer",
       description: "Ntt Data [Jan 2024 - Present]",
@@ -93,7 +82,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]">
-          <img src={`${basePath}/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
+          <img src={`/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
         </div>,
       name: "Senior Community Manager & Debugger",
       description: "Codyfight [Feb 2022 - Sep 2023]",
@@ -153,7 +142,7 @@ export const DATA = {
     {
       Icon: () =>
         <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]">
-          <img src={`${basePath}/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
+          <img src={`/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
         </div>,
       name: "Founder",
       description: "Myra [Jan 2018 - Present]",
@@ -179,7 +168,7 @@ export const DATA = {
       badges: [],
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Men]",
-      logoUrl: `${basePath}/fcul.png`,
+      logoUrl: `/fcul.png`,
       start: "September 2024",
       end: "Present",
       description:
@@ -197,7 +186,7 @@ export const DATA = {
       href: "https://autonoma.pt/",
       location: "Lisbon, Portugal",
       title: "Head Coach [Volleyball, Women]",
-      logoUrl: `${basePath}/UAL.jpg`,
+      logoUrl: `/UAL.jpg`,
       start: "September 2023",
       end: "September 2024",
       description:
@@ -216,7 +205,7 @@ export const DATA = {
       href: "https://www.elosocial.org/",
       location: "Lisbon, Portugal",
       title: "IT Support",
-      logoUrl: `${basePath}/fcul.jpg`,
+      logoUrl: `/fcul.jpg`,
       start: "January 2019",
       end: "January 2020",
       description:
@@ -235,7 +224,7 @@ export const DATA = {
       href: "https://websummit.com/",
       location: "Lisbon, Portugal",
       title: "Volunteer",
-      logoUrl: `${basePath}/myra.jpg`,
+      logoUrl: `/myra.jpg`,
       start: "January 2019",
       end: "January 2021",
       description:
@@ -272,7 +261,7 @@ export const DATA = {
       ],
       image: "",
       video:
-      `${basePath}/MentalApp.mp4`,
+      `/MentalApp.mp4`,
     },
   ],
         // {
