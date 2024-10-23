@@ -13,7 +13,7 @@ var resume_1 = require("@/data/resume");
 
 var google_1 = require("next/font/google");
 
-require("./globals.css");
+require("@/app/globals.css");
 
 var fontSans = google_1.Inter({
   subsets: ["latin"],
