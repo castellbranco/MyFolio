@@ -40,10 +40,10 @@ const HeroSection = () => {
       {/* Right side with orbiting icons */}
       <div className="relative flex h-full w-full max-w-[28rem] sm:max-w-[32rem] items-center justify-center overflow-hidden rounded-lg bg-background mt-6">
 
-        <OrbitingCircles
+      <OrbitingCircles
           className="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent"
           duration={20}
-          delay={20}
+          delay={0}
           radius={90} // Increased radius
         >
           <Icons.java className="h-6 w-6 sm:h-8 sm:w-8" />
@@ -51,7 +51,24 @@ const HeroSection = () => {
         <OrbitingCircles
           className="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent"
           duration={20}
+          delay={5}
+          radius={90} // Increased radius
+        >
+          <Icons.sql className="h-6 w-6 sm:h-8 sm:w-8" />
+        </OrbitingCircles>
+
+        <OrbitingCircles
+          className="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent"
+          duration={20}
           delay={10}
+          radius={90} // Increased radius
+        >
+          <Icons.react className="h-6 w-6 sm:h-8 sm:w-8" />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] border-none bg-transparent"
+          duration={20}
+          delay={15}
           radius={90} // Increased radius
         >
           <Icons.python className="h-6 w-6 sm:h-8 sm:w-8" />

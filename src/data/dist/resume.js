@@ -47,7 +47,7 @@ exports.DATA = {
             },
             Resume: {
                 name: "Resume",
-                url: "#",
+                url: "https://drive.google.com/file/d/1iFImpebQLg-M3MCZBQVisXycZO4B-izt/view?usp=sharing",
                 icon: icons_1.Icons.resume,
                 navbar: true
             }
@@ -117,10 +117,10 @@ exports.DATA = {
                 React.createElement("span", { className: "block" }, "Bachelor's Degree of Computer Science (BCS)"))),
             href: "/",
             cta: "",
-            desc: "",
+            desc: "Developed expertise in LLMs, NLP, and predictive analytics. Thesis focused on creating a mental health survey app utilizing LLMs to predict outcomes based on user responses.",
             technologie: [],
             background: React.createElement("image", { className: "absolute -right-20 -top-20 opacity-30" }),
-            className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex items-start space-x-4 pointer-events-none"
+            className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex space-x-4"
         },
         {
             Icon: function () {
