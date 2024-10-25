@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { Badge } from "./badge";
 
 const BentoGrid = ({
@@ -15,8 +14,8 @@ const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
-        className,
+      "grid grid-cols-3 gap-4 ",
+      className,
       )}
     >
       {children}
@@ -42,7 +41,7 @@ const BentoCard = ({
   description: React.ReactNode;
   href: string;
   cta: string;
-  desc: string;
+  desc: React.ReactNode;
   technologie: readonly string[];
 }) => (
   <div

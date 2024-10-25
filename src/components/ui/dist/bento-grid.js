@@ -6,7 +6,7 @@ var utils_1 = require("@/lib/utils");
 var badge_1 = require("./badge");
 var BentoGrid = function (_a) {
     var children = _a.children, className = _a.className;
-    return (React.createElement("div", { className: utils_1.cn("grid w-full auto-rows-[22rem] grid-cols-3 gap-4", className) }, children));
+    return (React.createElement("div", { className: utils_1.cn("grid grid-cols-3 gap-4 ", className) }, children));
 };
 exports.BentoGrid = BentoGrid;
 var BentoCard = function (_a) {

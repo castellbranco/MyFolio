@@ -11,7 +11,7 @@ export const DATA = {
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
-    "A proactive Software Engineer skilled in developing solutions using Python, Databricks, and machine learning. Passionate about solving complex problems through innovative data engineering and software development approaches.",
+    "A Software Engineer skilled in developing solutions. Passionate about solving complex problems through innovative data engineering and software development approaches.",
   summary:
     "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
   avatarUrl: `/me.png`,
@@ -61,7 +61,7 @@ export const DATA = {
   features: [
     {
       Icon: () =>
-        <div className="flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-120%]">
+        <div className="flex justify-center items-center transition-all duration-300 group-hover:scale-75 group-hover:translate-x-[-20%] group-hover:translate-y-[-140%]">
           <img src={`/ntt.svg`} alt="NTT Logo" className="h-35 w-35" />
         </div>,
       name: "Junior Engineer",
@@ -81,7 +81,7 @@ export const DATA = {
     },
     {
       Icon: () =>
-        <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-265%]">
+        <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-300%]">
           <img src={`/cody.png`} alt="Codyfight Logo" className="h-20 w-20" />
         </div>,
       name: "Senior Community Manager & Debugger",
@@ -102,46 +102,70 @@ export const DATA = {
     },
     {
       Icon: () =>
-        <>
-          <MixIcon className="h-10 w-10 text-gray-800" />
-        </>,
+        <div className="group-hover:opacity-0 transition-opacity duration-300">
+      <MixIcon className="h-10 w-10 text-gray-800" />
+    </div>,
       name: "Ongoing Project",
       description: "A side project that I'm working on",
       href: "/",
-      cta: "Know more",
-      desc: "",
+      cta: "Locked",
+      desc: (
+        <div className="flex items-start">
+          <img src="https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/thunder-stone.png" alt="Icon" className="w-6 h-6 mr-3" />
+          <div className="text-sm text-neutral-600 leading-relaxed tracking-wide">
+            <div className="font-semibold text-neutral-800 mb-2">
+              Industry-Focused Real Estate Tool
+            </div>
+            <p>
+              Building a solution for the real estate 
+              sector using OpenAI, web scraping, data analysis, and engineering.
+            </p>
+          </div>
+        </div>
+      ),
       technologie: [],
       background: <image className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 pointer-events-none",
+      className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 rounded-xl shadow-md py-4 px-2 flex flex-col space-y-4 transition duration-300 hover:bg-white hover:shadow-lg",
     },
     {
       Icon: () => <></>,
       name: "Academic Background",
       description: (
-        <span className="text-sm text-neutral-600 leading-relaxed tracking-wide">
-          <span className="block font-semibold text-neutral-800">
+        <div className="text-sm text-neutral-600 leading-relaxed tracking-wide">
+          <div className="font-semibold text-neutral-800">
             NOVA Information Management School
-          </span>
-          <span className="block">Master in Information Management</span>
-          <span className="block mt-2 font-semibold text-neutral-800">
+          </div>
+          <div>Master in Information Management</div>
+          <div className="mt-2 font-semibold text-neutral-800">
             University of Science of Lisbon
-          </span>
-          <span className="block">
-            Bachelor&apos;s Degree of Computer Science (BCS)
-          </span>
-        </span>
+          </div>
+          <div>Bachelor&apos;s Degree in Computer Science (BCS)</div>
+        </div>
       ),
-      href: "/",
-      cta: "",
-      desc: "Developed expertise in LLMs, NLP, and predictive analytics. Thesis focused on creating a mental health survey app utilizing LLMs to predict outcomes based on user responses.",
+      href: "https://run.unl.pt/bitstream/10362/166487/1/TGI3097.pdf",
+      cta: "Read my Thesis",
+      desc: (
+        <div className="flex items-start">
+          <img src="https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/evo-item/moon-stone.png" alt="Icon" className="w-6 h-6 mr-3" />
+          <div className="text-sm text-neutral-600 leading-relaxed tracking-wide">
+            <div className="font-semibold text-neutral-800 mb-2">
+              Expertise in LLMs & Predictive Analytics
+            </div>
+            <p>
+              Thesis: Created a mental health survey app using 
+              LLMs to predict outcomes based on user responses.
+            </p>
+          </div>
+        </div>
+      ),
       technologie: [],
       background: <image className="absolute -right-20 -top-20 opacity-30" />,
       className:
-        "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-200 rounded-lg shadow-lg py-2 px-6 flex space-x-4",
+        "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-gray-100 rounded-xl shadow-md py-4 px-2 flex flex-col space-y-4 transition duration-300 hover:bg-white hover:shadow-lg",
     },
     {
       Icon: () =>
-        <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-280%]">
+        <div className="flex justify-center items-center duration-300 group-hover:scale-75 group-hover:translate-x-[-45%] group-hover:translate-y-[-320%]">
           <img src={`/myra_trans.png`} alt="Myra Logo" className="h-20 w-20" />
         </div>,
       name: "Founder",
@@ -264,62 +288,6 @@ export const DATA = {
       `/MentalApp.mp4`,
     },
   ],
-        // {
-    //   title: "Mental Health App",
-    //   href: "https://github.com/castellbranco/ML_Mental-Health-App",
-    //   dates: "Oct 2023 - Jan 2024",
-    //   active: true,
-    //   description:
-    //     "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Python",
-    //     "LLM's",
-    //     "PKL models",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Project",
-    //       href: "https://github.com/castellbranco/ML_Mental-Health-App",
-    //       icon: <Icons.folder className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "/MentalApp.mp4",
-    // },
-    // {
-    //   title: "Magic UI",
-    //   href: "https://magicui.design",
-    //   dates: "June 2023 - Present",
-    //   active: true,
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://magicui.design",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/magicuidesign/magicui",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
 reviews: [
   {
     name: "University of Science of Lisbon",
