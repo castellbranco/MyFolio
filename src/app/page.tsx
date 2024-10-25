@@ -4,6 +4,7 @@ import IntroSection from "@/components/sections/IntroSection";
 import ContactSection from "@/components/sections/ContactSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ExtraSection from "@/components/sections/ExtraSection";
+import React from 'react';
 
 const BLUR_FADE_DELAY = 0.04;
 
