@@ -11,7 +11,7 @@ export const DATA = {
   location: "Lisbon, Portugal",
   locationLink: "https://www.google.com/maps/place/Lisbon",
   description:
-    "A Software Engineer skilled in developing solutions. Passionate about solving complex problems through innovative data engineering and software development approaches.",
+    "A Software Engineer, with +2 years of experience, skilled in developing solutions. Passionate about solving complex problems through innovative data engineering and software development approaches.",
   summary:
     "I'm a Software Developer and Data Engineer with 2+ years of experience, specializing in creative data solutions and system optimization. I've worked with companies across Lithuania and Portugal, blending technical skills with creativity to make an impact.",
   avatarUrl: `/me.png`,
@@ -263,6 +263,52 @@ export const DATA = {
     }
   ],
   projects: [
+    {
+      title: "Automating LinkedIn Newsletters",
+      href: "https://github.com/castellbranco/LinkedInAutoPosts",
+      dates: "Oct 2024 - Nov 2024",
+      active: true,
+      description:
+        "Designed and developed an Automation for LinkedIn pipeline, aimed at creating and posting content automatically to LinkedIn.",
+      technologies: [
+        "Scrapping",
+        "Python",
+        "LLM's",
+        "API",
+      ],
+      links: [
+        {
+          type: "Project",
+          href: "https://github.com/castellbranco/LinkedInAutoPosts",
+          icon: <Icons.folder className="size-3" />,
+        },
+      ],
+      image: "/link.png",
+      video: ``,
+    },
+    {
+      title: "Automating Social Media Videos",
+      href: "https://github.com/castellbranco/StoryTellingLM",
+      dates: "Sept 2024 - Nov 2024",
+      active: true,
+      description:
+        "Designed and developed a machine learning-based app for my thesis, aimed at predicting mental health states from text data.",
+      technologies: [
+        "TTS Models",
+        "Python",
+        "Video editing",
+      ],
+      links: [
+        {
+          type: "Project",
+          href: "https://github.com/castellbranco/StoryTellingLM",
+          icon: <Icons.folder className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+      `/reels.mp4`,
+    },
     {
       title: "Mental Health App",
       href: "https://github.com/castellbranco/ML_Mental-Health-App",
