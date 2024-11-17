@@ -3,10 +3,7 @@ import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import dynamic from "next/dynamic";
 
-// Dynamically import heavy components
-const SuspenseComponent = dynamic(() => import("react").then((mod) => mod.Suspense), { ssr: false });
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
@@ -73,9 +70,9 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         </h1>
         {/* Metadata */}
         <div className="flex justify-between items-center mt-2 mb-8 text-sm text-gray-500">
-          <SuspenseComponent fallback={<p className="h-5" />}>
-            <p>{formatDate(post.metadata.publishedAt)}</p>
-          </SuspenseComponent>
+          <div className="h-5">
+            {formatDate(post.metadata.publishedAt)}
+          </div>
         </div>
         {/* Blog Content */}
         <article
