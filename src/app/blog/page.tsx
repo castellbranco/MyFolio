@@ -1,16 +1,11 @@
-import dynamic from "next/dynamic";
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
+import BlurFade from "@/components/magicui/BlurFadeClient"; // Import the Client Component
 
 export const metadata = {
   title: "My Backlog :)",
   description: "My journey to become a better developer, and the thoughts I have along the way.",
 };
-
-// Dynamically import BlurFade for performance
-const BlurFade = dynamic(() => import("@/components/magicui/blur-fade"), {
-  ssr: false,
-});
 
 const BLUR_FADE_DELAY = 0.04;
 
